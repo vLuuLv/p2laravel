@@ -1,0 +1,14 @@
+footer {
+    margin-left: 0px !important;
+}
+.card-header {
+    background-color: #1d1b31 !important;
+}
+hr,
+.sidebar {
+    box-sizing: border-box !important;
+}
+
+.sidebar {
+    padding: 6px 14px !important;
+}
