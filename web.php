@@ -5,6 +5,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\KamarController;
 use App\Http\Controllers\FasilitasKamarController;
 use App\Http\Controllers\FasilitasHotelController;
+use App\Http\Controllers\ReservasiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,4 +49,11 @@ Route::middleware(['role:admin'])->group(function () {
 
     // Route untuk menampilkan halaman fasilitas hotel
     Route::resource('/fasilitas-hotel', FasilitasHotelController::class);
+});
+
+// Route halaman untuk role resepsionis
+Route::middleware(['role:resepsionis'])->group(function () {
+
+    // Route untuk menampilkan halaman kamar
+    Route::resource('/reservasi', ReservasiController::class);
 });

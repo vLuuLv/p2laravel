@@ -32,7 +32,7 @@
                     </div>
             </div>
             @endif
-            @if (Auth::user()->role == 'admin' || Auth::user()->role == 'rew')
+            @if (Auth::user()->role == 'admin' || Auth::user()->role == 'resepsionis')
                 <div class="container mt-5 pt-5">
                     <div class="row">
                         <div class="col text-center">
